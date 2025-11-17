@@ -1,0 +1,19 @@
+1. CONCEITO ESSENCIAL: I/O NÃO-BLOQUEANTE (Assincronicidade)
+- É a razão fundamental da existência e sucesso do Node.js (criado por Ryan Dahl).
+- O problema resolvido é o de servidores que travavam (bloqueavam) esperando por tarefas lentas de I/O (Entrada/Saída).
+- Node.js **não espera**. Ele envia a tarefa para o sistema operacional e continua processando o próximo pedido (processamento assíncrono).
+- Vantagem: Garante alta **Escalabilidade** e **Eficiência** para aplicações com muitas conexões simultâneas.
+
+2. CARACTERÍSTICAS E ARQUITETURA
+- É um ambiente que roda **JavaScript no Servidor (Back-end)**.
+- Usa o motor **V8 do Google Chrome** para execução JS em altíssima velocidade.
+- Modelo **Single-Thread** (execução em uma única linha) gerenciada pelo **Event Loop**.
+- O **Event Loop** é o coração da arquitetura, responsável por gerenciar as chamadas assíncronas.
+- É **Orientado a Eventos**, reagindo a requisições.
+
+3. AMBIENTE E PRIMEIRA APLICAÇÃO
+- **Ferramentas:** Requer **Node.js** e **NPM** (Node Package Manager).
+- **NPM** é o gerenciador usado para baixar e controlar **módulos/pacotes** (as dependências) do projeto.
+- O arquivo **`package.json`** é o manifesto que lista todas as dependências.
+- **REPL:** O comando `node` no terminal abre o console interativo, ótimo para testes rápidos de código.
+- A primeira aplicação é um servidor HTTP simples, rodado com o comando: `node nome_do_arquivo.js`.
